@@ -4,3 +4,73 @@
     list-style-type: none;
     text-decoration: none;
 }
+
+:root {
+    /* VARIABLES CSS */
+    --main-color: #F5F5F5;
+    --hover-color: rgb(176, 176, 176);
+    --background-color: #1B1717;
+    --acent-color: #d00000;
+    --secondary-color: #262626;
+    --sans-font: 'Inter', sans-serif;
+    --serif-font: 'Playfair Display', serif;
+}
+
+
+
+/* MENU RESPONSIVE MOVIL */
+@media screen and (max-width : 900px) {
+    #icon_menu {
+        display: block;
+    }
+
+    #menu {
+        transition: 0.5s;
+        height: 100vh;
+        z-index: 10000;
+        padding: 0;
+    }
+
+    #menu>ul {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-color);
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .menu-buttons {
+        gap: 50px;
+    }
+
+    #menu>ul>li {
+        list-style: none;
+        padding: 0.5em;
+    }
+
+    #menu>ul>li>a {
+        font-size: 2em;
+    }
+
+    #menu>ul>li>a>h2 {
+        color: var(--main-color);
+    }
+
+    #menu>#close {
+        display: block;
+    }
+
+    #close {
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        font-size: 30px;
+    }
+
+    #close>i {
+        color: var(--main-color);
+    }
+}
