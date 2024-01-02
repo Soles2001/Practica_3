@@ -1,13 +1,11 @@
 $(document).ready(function () {
     console.log("initJQuery")
-
-
-
+    
     // MENU PROPIO QUE SE ESCONDE + RESPONSIVE MOVIL
     var lastScrollTop = 0;
 
     function checkWidth() {
-        if ($(window).width() > 900) {
+        if ($(window).width() > 991) {
             $("#menu").css("left", "0");
             console.log("ancho");
 

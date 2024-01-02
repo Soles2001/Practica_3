@@ -19,7 +19,7 @@
 
 
 /* MENU RESPONSIVE MOVIL */
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 991px) {
     #icon_menu {
         display: block;
     }
