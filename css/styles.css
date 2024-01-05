@@ -31,7 +31,7 @@ footer{
 
 footer>div:nth-child(2){
     background-color: #00AD5F;
-}
+}   
 
 .bg_am{
     background-color: var(--main-color);
@@ -114,4 +114,21 @@ footer>div:nth-child(2){
     #close>i {
         color: var(--main-color);
     }
+}
+
+
+/*HEADER*/
+.vw-40 {
+    width: 40vw !important;
+}
+
+.gif {
+    padding-top: 20vh;
+}
+
+.triangle {
+    height: 20vh;
+    width: 100vw;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    background-color: white;
 }
