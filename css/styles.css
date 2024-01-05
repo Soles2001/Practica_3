@@ -25,20 +25,20 @@ img {
     height: 100%;
 }
 
-.bg_am{
-    background-color: var(--main-color);
-}
-
-.body_about{
-    background-color: #93EAFF;
-}
-
 footer{
     background-color: #ffffff;
 }
 
 footer>div:nth-child(2){
     background-color: #00AD5F;
+}
+
+.bg_am{
+    background-color: var(--main-color);
+}
+
+.body_about{
+    background-color: #93EAFF;
 }
 
 
