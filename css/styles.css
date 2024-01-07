@@ -132,3 +132,52 @@ footer>div:nth-child(2){
     clip-path: polygon(50% 50%, 0 0, 100% 0);
     background-color: white;
 }
+
+marquee {
+    height: 15vh;
+    background-color:#FF0000;
+}
+
+.track {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+.content {
+    font-size: 6vw;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.content {
+    text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+}
+
+.star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    height: 2rem;
+}
+
+._height_img{
+    height: 40vh;
+}
+
+.product{
+    width: 30vw;
+}
