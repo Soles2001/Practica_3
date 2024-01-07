@@ -6,6 +6,8 @@
     font-family: 'Anton', sans-serif;
 }
 
+
+
 :root {
     /* VARIABLES CSS */
     --main-color: #FFE001;
@@ -14,6 +16,7 @@
     --acent-color: #d00000;
     --secondary-color: #262626;
 }
+
 
 main {
     height: 100%;
@@ -166,7 +169,7 @@ footer>div:nth-child(2){
 }
 
 .letraC {
-    color: #FFE001;
+    color:var(--main-color);
 }
 
 .letraA {
