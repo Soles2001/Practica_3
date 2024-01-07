@@ -240,3 +240,12 @@ footer>div:nth-child(2){
 .product{
     width: 30vw;
 }
+
+.somos{
+    font-size: 8vw;
+    text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+}
