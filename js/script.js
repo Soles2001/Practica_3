@@ -1,6 +1,8 @@
 $(document).ready(function () {
     console.log("initJQuery")
-    
+
+
+
     // MENU PROPIO QUE SE ESCONDE + RESPONSIVE MOVIL
     var lastScrollTop = 0;
 
@@ -61,5 +63,16 @@ $(document).ready(function () {
             icon.removeClass('fa-bars').addClass('fa-xmark'); // Cambia a ícono "x"
         }
     });
+
+
+    var colores = ['yellow', 'red', 'green', 'blue', 'red', 'blue', 'green', 'red'];
+
+        // Función para cambiar clases de color cada segundo
+        setInterval(function() {
+            $('.img_home span').each(function(){
+                var randomColor = colores[Math.floor(Math.random() * colores.length)];
+                $(this).removeClass().addClass(randomColor);
+            });
+        }, 1000);
 
 })
