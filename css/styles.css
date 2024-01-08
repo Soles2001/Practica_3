@@ -48,6 +48,7 @@ footer>div:nth-child(2){
     background-color: #00AD5F;
 }
 
+
 /*MENU*/
 .home_icon {
     height: 8vh;
@@ -136,6 +137,9 @@ footer>div:nth-child(2){
     background-color: white;
 }
 
+.des_products{
+    height: 100%;
+}
 
 /*MARQUEE*/
 .marquee {
@@ -150,17 +154,26 @@ footer>div:nth-child(2){
 }
 
 .content {
+    height: 100%;
     font-size: 6vw;
 }
 
 @keyframes marquee {
     from {
-        transform: translateX(0);
-    }
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
 
     to {
         transform: translateX(-50%);
-    }
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
 }
 
 .content {
@@ -223,22 +236,17 @@ footer>div:nth-child(2){
     position: absolute;
     top: 0;
     left: 0;
-    height: 2rem;
-    height: 2rem;
 }
 
 ._height_img{
-    height: 40vh;
+    height: 50vh;
+    width: 100%;
     border: 5px solid black;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-}
-
-.product{
-    width: 30vw;
 }
 
 .somos{
@@ -248,4 +256,14 @@ footer>div:nth-child(2){
     3px -3px 0 black,
     -3px 3px 0 black,
     3px 3px 0 black;
+}
+
+
+@media screen and (max-width : 767px) {
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .vw-40 {
+        width: 90vw !important;
+    }
 }
