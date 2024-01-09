@@ -254,3 +254,19 @@ footer>div:nth-child(2){
     height: 500px;
     width: 100%;
 }
+.privacidad-links {
+    color: #d00000;
+}
+.astyped {
+    /* para elminar el effecto de text uppercase en agunos imputs del formulario */
+    text-transform: none;
+}
+.submit-btn{
+    border-radius: 38px;
+    border: 6px solid #000;
+    background: #00AD5F;
+}
+.submit-btn:hover {
+    border: 6px solid #000;
+    background-color: #FFE001;
+}
