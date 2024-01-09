@@ -75,4 +75,7 @@ $(document).ready(function () {
             });
         }, 1000);
 
+        // Función para inicializar el mapa
+
 })
+

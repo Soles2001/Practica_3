@@ -244,3 +244,13 @@ footer>div:nth-child(2){
         font-size: 14vw;
     }
 }
+
+
+
+
+
+
+#map {
+    height: 500px;
+    width: 100%;
+}
