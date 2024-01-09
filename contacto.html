@@ -102,6 +102,38 @@
 
     <main class="vw-100 bg-blue">
         <div class="triangle overflow-hidden primary-color"></div>
+        <h1 class="text-center text-uppercase">Solicita Información</h1>
+
+        <div class="container text-uppercase">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNombre">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputApellidos">Apellidos</label>
+                        <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputTelefono">Teléfono</label>
+                        <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputMail">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputMail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputMensaje">Mensaje</label>
+                    <textarea class="form-control" id="inputMensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
 
         <div id="map"></div>
     </main>
@@ -160,9 +192,8 @@
         
         var map = L.map('map', {
             zoomControl: false // Deshabilita los controles de zoom
-            
-        }).setView([39.47036, -0.3717988], 30); // Coordenadas y nivel de zoom inicial
-
+        }).setView([39.47036, -0.3717988], 30); // Coordenadas
+        map.invalidateSize();
         // Capa de mapa predeterminada
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         // Chincheta
