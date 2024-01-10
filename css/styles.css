@@ -310,6 +310,9 @@ figure {
     color:white;
     font-family: 'Antonio', sans-serif;
 }
+.txt-light{
+    font-family: 'Antonio', sans-serif;
+}
 .txt-hover-fot:hover{
     color: #FFE001;
     cursor: pointer;
