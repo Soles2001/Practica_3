@@ -308,6 +308,10 @@ figure {
     font-weight: 100;
     color:white;
 }
+.txt-hover-fot:hover{
+    color: #FFE001;
+    cursor: pointer;
+}
 
 .borde-cajas-r{
     stroke-linecap: round;
