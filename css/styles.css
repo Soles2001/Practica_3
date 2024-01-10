@@ -348,8 +348,10 @@ figure {
         box-sizing: border-box;
     }
 }
-@media (max-width: 575) {
-
+@media (max-width: 575px) {
+    #map {
+        height: 300px;
+    }
 }
 
 
