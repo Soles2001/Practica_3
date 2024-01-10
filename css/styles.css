@@ -307,6 +307,7 @@ figure {
 .txt-sec-fot{
     font-weight: 100;
     color:white;
+    font-family: 'Antonio', sans-serif;
 }
 .txt-hover-fot:hover{
     color: #FFE001;
@@ -347,3 +348,12 @@ figure {
         box-sizing: border-box;
     }
 }
+@media (max-width: 575) {
+
+}
+
+
+
+
+
+
