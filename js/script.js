@@ -75,6 +75,16 @@ $(document).ready(function () {
             });
         }, 1000);
 
+        var map = L.map('map', {
+            zoomControl: false // Deshabilita los controles de zoom
+        }).setView([39.47036, -0.3717988], 30); // Coordenadas
+        // Capa de mapa predeterminada
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        // Chincheta
+        var marker = L.marker([39.47036, -0.3717988]).addTo(map)
+            .bindPopup('CALABUCH')
+            .openPopup();
+        map.invalidateSize();
 
 })
 
