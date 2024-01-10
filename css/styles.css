@@ -306,7 +306,37 @@ figure {
 }
 
 
-/* .borde-cajas{
+.borde-cajas-r{
     stroke-linecap: round;
-    stroke-width: 50;
-} */
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    box-sizing: border-box;
+}
+.borde-cajas-l{
+    stroke-linecap: round;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+    .borde-cajas-r{
+        stroke-linecap: round;
+        border-top: 0px solid black;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        box-sizing: border-box;
+    }
+    .borde-cajas-l{
+        stroke-linecap: round;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        box-sizing: border-box;
+    }
+}
