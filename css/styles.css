@@ -32,6 +32,10 @@ footer>div:nth-child(2){
     background-color: #00AD5F;
 }
 
+figure {
+    margin: 0 0 0rem;
+}
+
 .red{
     color: #FF0000;
 }
