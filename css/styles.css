@@ -304,7 +304,10 @@ figure {
     color: rgb(195, 195, 195);
     text-decoration: line-through;
 }
-
+.txt-sec-fot{
+    font-weight: 100;
+    color:white;
+}
 
 .borde-cajas-r{
     stroke-linecap: round;
