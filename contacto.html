@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alonso Santamaría, Daniel Alcolea">
+    <meta name="description" content="Studio Web">
+    <link rel="icon" type="image/x-icon" href="img/image 111.png">
+    <title>Calabuch</title>
+
+    <script src="https://kit.fontawesome.com/2cb2f18cda.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css\styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Faster+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menu_cont">
+        <nav id="menu" class="navbar navbar-expand-lg fixed-top justify-content-center pt-0">
+            <button id="close" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars green"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav menu-buttons d-flex justify-content-around align-items-center vw-40">
+                    <li class="nav-item order-lg-3">
+                        <a class="nav-link" href="index.html">
+                            <figure class="home_icon">
+                                <img src="img/image 111.png" alt="">
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item order-lg-1">
+                        <a class="nav-link" href="shop.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item order-lg-2">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item order-lg-4">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item order-lg-5">
+                        <a class="nav-link" href="https://calabuch.cargo.site/" target="_blank">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <header class="vh-100 bg-white">
+        <div class="marquee_shop p-5 position-relative vw-100 overflow-hidden d-flex justify-content-center align-items-center bg-white">
+            <div class="track position-absolute mt-5">
+                <div class="content">
+                    &nbsp;<span class="yellow">C</span><span class="red">A</span><span class="green">L</span><span
+                        class="blue">A</span><span class="red">B</span><span class="blue">U</span><span
+                        class="green">C</span><span class="red">H</span><span class="yellow">C</span><span
+                        class="red">A</span><span class="green">L</span><span class="blue">A</span><span
+                        class="red">B</span><span class="blue">U</span><span class="green">C</span><span
+                        class="red">H</span><span class="yellow">C</span><span class="red">A</span><span
+                        class="green">L</span><span class="blue">A</span><span class="red">B</span><span
+                        class="blue">U</span><span class="green">C</span><span class="red">H</span><span
+                        class="yellow">C</span><span class="red">A</span><span class="green">L</span><span
+                        class="blue">A</span><span class="red">B</span><span class="blue">U</span><span
+                        class="green">C</span><span class="red">H</span><span class="yellow">C</span><span
+                        class="red">A</span><span class="green">L</span><span class="blue">A</span><span
+                        class="red">B</span><span class="blue">U</span><span class="green">C</span><span
+                        class="red">H</span><span class="yellow">C</span><span class="red">A</span><span
+                        class="green">L</span><span class="blue">A</span><span class="red">B</span><span
+                        class="blue">U</span><span class="green">C</span><span class="red">H</span><span
+                        class="yellow">C</span><span class="red">A</span><span class="green">L</span><span
+                        class="blue">A</span><span class="red">B</span><span class="blue">U</span><span
+                        class="green">C</span><span class="red">H</span><span class="yellow">C</span><span
+                        class="red">A</span><span class="green">L</span><span class="blue">A</span><span
+                        class="red">B</span><span class="blue">U</span><span class="green">C</span><span
+                        class="red">H</span><span class="yellow">C</span><span class="red">A</span><span
+                        class="green">L</span><span class="blue">A</span><span class="red">B</span><span
+                        class="blue">U</span><span class="green">C</span><span class="red">H</span><span
+                        class="yellow">C</span><span class="red">A</span><span class="green">L</span><span
+                        class="blue">A</span><span class="red">B</span><span class="blue">U</span><span
+                        class="green">C</span><span class="red">H</span><span class="yellow">C</span><span
+                        class="red">A</span><span class="green">L</span><span class="blue">A</span><span
+                        class="red">B</span><span class="blue">U</span><span class="green">C</span><span
+                        class="red">H</span>
+    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 offset-md-3 text-center">
+            <img src="img/guiño.png" class="img-fluid mb-5" alt="guiño" style="max-height: 300px;">
+        </div>
+        <h1 class="text-center text-uppercase">MAIL: CALABUCH@GMAIL.COM<br>
+            TELÉFONO: 918840299<br>
+            DIRECCIÓN: calle Don Juan de Austria 29009 Valencia</h1>
+    </header>
+
+    <main class="vw-100 bg-blue">
+        <div class="triangle overflow-hidden primary-color"></div>
+        <h1 class="text-center text-uppercase mb-5">Solicita Información</h1>
+
+        <section class="container text-uppercase">
+            <form id="formulario-contacto" class="px-1">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="form-group mb-3">
+                                <label for="inputNombre">Nombre*</label>
+                                <input type="text" class="form-control py-3" id="inputNombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="inputApellidos">Apellidos*</label>
+                                <input type="text" class="form-control py-3" id="inputApellidos" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="form-group mb-3">
+                                <label for="inputTelefono">Teléfono</label>
+                                <input type="text" class="form-control py-3" id="inputTelefono" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="inputMail">Correo Electrónico*</label>
+                                <input type="email" class="form-control py-3" id="inputMail" placeholder="Email" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="inputMensaje">Mensaje</label>
+                    <textarea class="form-control" id="inputMensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+
+                <div class="form-check mb-2">
+                    <input type="checkbox" class="form-check-input" id="politicaPrivacidad" required>
+                    <label class="form-check-label astyped" for="politicaPrivacidad">
+                        He leído y acepto la <a href="#" class="privacidad-links">política de privacidad</a> y el <a href="#" class="privacidad-links">aviso legal</a>.
+                    </label>
+                </div>
+                <p class="astyped">Los campos marcados con * son obligatorios</p>
+                <button type="submit" class="btn submit-btn text-uppercase px-5 mb-5">Enviar</button>
+
+            </form>
+        </section>
+
+        <div id="map-container">
+            <div id="map" class="z-index-0"></div>
+        </div>
+    </main>
+
+    <footer class="text-white">
+        <!-- dani: he añadido padding solo a la version movil y tables para que respide el dibujinchi del perro -->
+        <div class="d-md-flex flex-md-equal w-100 d-flex pt-5 pt-md-0">
+            <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center container-fluid img_home overflow-hidden">
+                <img src="img/image 109.png" alt="" class="d-block w-100 h-100 object-fit-cover">
+            </div>
+            <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center container-fluid img_home overflow-hidden">
+                <img src="img/image 108.png" alt="" class="d-block w-100 h-100 object-fit-cover">
+            </div>
+        </div>
+        <div class=" p-4">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <figure class="home_icon mb-3">
+                        <img src="img/image 111.png" alt="">
+                    </figure>
+                    <!-- <hr class="border-3 mx-2 text-white"> -->
+                    <div class="container text-center mb-5">
+                        <div class="row justify-content-center text-nowrap">
+                          <div class="col-auto px-2 txt-hover-fot">
+                            <i class="fab fa-instagram"></i>
+                          </div>
+                          <div class="col-auto px-2 txt-hover-fot">
+                            <i class="fab fa-twitter"></i>
+                          </div>
+                          <div class="col-auto px-2 txt-hover-fot">
+                            <i class="fab fa-tiktok"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3 class="txt-hover-fot">HOME</h3>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3 class="txt-hover-fot">NOVEDAD</h3>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3>PRODUCTO</h3>
+                    <p class="txt-sec-fot txt-hover-fot">BATERÍAS</p>
+                    <p class="txt-sec-fot txt-hover-fot">COHETES CUSTOME</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3>ABOUT</h3>
+                    <p class="txt-sec-fot txt-hover-fot">NACIMIENTO</p>
+                    <p class="txt-sec-fot txt-hover-fot">OBJETIVO</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h3>CONTACTO</h3>
+                    <p class="txt-sec-fot txt-hover-fot">Tel.:91 628 86 59</p>
+                    <p class="txt-sec-fot txt-hover-fot">CIF : G-87671673</p>
+                    <p class="txt-sec-fot txt-hover-fot">C/ Sopelana, 5. La Florida. 28023 Madrid</p>
+                </div>
+            </div>
+            <hr class="border-3 text-white my-5">
+            <div class="row text-start text-sm-center">
+                <div class="col-md-3">
+                    <p class="txt-sec-fot txt-hover-fot">Información Legal</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-sec-fot txt-hover-fot">Condiciones de venta</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-sec-fot txt-hover-fot">Política de privacidad</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-sec-fot txt-hover-fot">Accesibilidad</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="js\script.js"></script>
+</body>
+
+
+
+
+
